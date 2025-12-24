@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MR DIY | Clone Website</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background:#f5f5f5;
+        }
+        /* Header */
+        header{
+            background:#ffd200;
+            padding:15px 40px;
+        }
+        .header-container{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+            color:#000;
+        }
+        nav ul{
+            list-style:none;
+        }
+        nav ul li{
+            display:inline-block;
+            margin-left:20px;
+        }
+        nav ul li a{
+            text-decoration:none;
+            color:#000;
+            font-weight:bold;
+        }
+        /* Banner */
+        .banner{
+            background:#000;
+            color:#fff;
+            padding:80px 40px;
+            text-align:center;
+        }
+        .banner h1{
+            font-size:42px;
+            margin-bottom:15px;
+        }
+        .banner p{
+            font-size:18px;
+        }
+        /* Categories */
+        .categories{
+            padding:40px;
+            background:#fff;
+        }
+        .categories h2{
+            text-align:center;
+            margin-bottom:30px;
+        }
+        .category-grid{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:20px;
+            
+        }
+        .category{
+            background:#fafafa;
+            padding:30px 10px;
+            text-align:center;
+            border-radius:6px;
+            box-shadow:0 0 5px rgba(0,0,0,0.1);
+            background-color: #ffd200;
+        }
+        .category h3{
+            margin-top:10px;
+            font-size:16px;
+        }
+        /* Products */
+        .products{
+            padding:40px;
+        }
+        .products h2{
+            text-align:center;
+            margin-bottom:30px;
+        }
+        .product-grid{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:20px;
+        }
+        .product{
+            background:#fff;
+            padding:15px;
+            border-radius:6px;
+            text-align:center;
+            box-shadow:0 0 8px rgba(0,0,0,0.1);
+        }
+        .product img{
+            width:100%;
+            height:150px;
+            background:#ddd;
+        }
+        .product h4{
+            margin:10px 0;
+        }
+        .product p{
+            color:#555;
+            font-size:14px;
+        }
+        /* Footer */
+        footer{
+            background:#000;
+            color:#fff;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+        @media(max-width:900px){
+            .category-grid,.product-grid{
+                grid-template-columns:repeat(2,1fr);
+            }
+        }
+        @media(max-width:500px){
+            nav ul li{
+                margin-left:10px;
+            }
+            .category-grid,.product-grid{
+                grid-template-columns:1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">MR.DIY</div>
+        <nav>
+            <ul>
+                <li><a href="website.html">Home</a></li>
+            
+             <li><a href="Stores.html">Stores</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="banner">
+    <h1>Welcome to MR.DIY</h1>
+    <p>Always Low Prices | Everyday Household Products</p>
+</section>
+
+<section class="categories">
+    <h2>Shop by Categories</h2>
+    <div class="category-grid">
+        <div class="category"><a href="H&L.html"><h3>Home & Living</h3></a></div>
+        <div class="category"><a href="electrical.html"><h3>Electrical</h3></a></div>
+        <div class="category"><a href="stationary.html"><h3>Stationary</h3></a></div>
+        <div class="category"><a href="toys.html"><h3>Toys</h3></a></div>
+        <div class="category"><a href="hardware.html"><h3>Hardware</h3></a></div>
+        <div class="category"><a href="kitchen.html"><h3>Kitchen</h3></a></div>
+        <div class="category"><a href="beauty.html"><h3>Beauty</h3></a></div>
+        <div class="category"><a href="accessories.html"><h3>Accessories</h3></a></div>
+    </div>
+    </section>
+<footer>
+<p>© 2025 MR.DIY Clone Website | For Educational Purpose Only</p>
+</footer>
+    </body>
+    </html>
